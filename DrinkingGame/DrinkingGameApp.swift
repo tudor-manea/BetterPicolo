@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct DrinkingGameApp: App {
+    @StateObject private var gameViewModel = GameViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if gameViewModel.isGameStarted {
+                    GameView(viewModel: gameViewModel)
+                } else {
+                    PlayerInputView(viewModel: gameViewModel)
+                }
+            }
         }
     }
 }
