@@ -19,12 +19,17 @@ class GameViewModel: ObservableObject {
     }
     
     private func loadQuestions() {
-        // Sample questions - In a real app, these would be loaded from a JSON file or API
-        questions = [
-            Question(template: "{player1} must take a drink!", numberOfPlayersInvolved: 1, type: .singlePlayerAction),
-            Question(template: "{player1} must challenge {player2} to a dance-off!", numberOfPlayersInvolved: 2, type: .playerComparison),
-            Question(template: "Everyone except {player1} must drink!", numberOfPlayersInvolved: 1, type: .groupAction)
-        ]
+        do {
+            questions = try QuestionLoader.loadQuestions()
+        } catch {
+            print("Failed to load questions: \(error)")
+            // Fallback questions in case the JSON file fails to load
+            questions = [
+                Question(template: "{player1} must take a drink!", numberOfPlayersInvolved: 1, type: .singlePlayerAction),
+                Question(template: "{player1} must challenge {player2} to a dance-off!", numberOfPlayersInvolved: 2, type: .playerComparison),
+                Question(template: "Everyone except {player1} must drink!", numberOfPlayersInvolved: 1, type: .groupAction)
+            ]
+        }
     }
     
     func addPlayer() {

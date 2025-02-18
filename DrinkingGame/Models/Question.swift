@@ -7,12 +7,16 @@ enum QuestionType: String, Codable {
 }
 
 struct Question: Identifiable, Codable {
-    let id: UUID
+    let id: String
     let template: String
     let numberOfPlayersInvolved: Int
     let type: QuestionType
     
-    init(id: UUID = UUID(), template: String, numberOfPlayersInvolved: Int, type: QuestionType) {
+    var uuid: UUID {
+        UUID()
+    }
+    
+    init(id: String = UUID().uuidString, template: String, numberOfPlayersInvolved: Int, type: QuestionType) {
         self.id = id
         self.template = template
         self.numberOfPlayersInvolved = numberOfPlayersInvolved

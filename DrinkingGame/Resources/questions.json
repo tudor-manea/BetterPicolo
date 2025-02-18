@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "template": "{player1} must take a drink!",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "2",
+      "template": "{player1} must challenge {player2} to a dance-off! Loser drinks twice.",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "3",
+      "template": "Everyone except {player1} must drink!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "4",
+      "template": "{player1} must give their phone to {player2}. {player2} can send one text message to anyone in {player1}'s contacts. If {player1} refuses, they drink 3 times.",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "5",
+      "template": "{player1} must tell an embarrassing story about themselves or drink twice.",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "6",
+      "template": "Would you rather? {player1} asks {player2} two options. The group votes on which is worse. {player2} must do the winning option or drink twice.",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "7",
+      "template": "Categories! {player1} picks a category (e.g., car brands). Go around the group naming items. First to hesitate or repeat drinks!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "8",
+      "template": "Truth or Dare! {player1} must choose truth or dare from {player2}. Refusing means drinking three times.",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "9",
+      "template": "Waterfall! {player1} starts, and everyone must start drinking. You can't stop until the person before you stops!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "10",
+      "template": "Never have I ever! {player1} starts with 3 fingers up. First to put all fingers down drinks!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    }
+  ]
+}
