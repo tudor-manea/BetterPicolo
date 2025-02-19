@@ -210,107 +210,113 @@
       "numberOfPlayersInvolved": 0,
       "type": "singlePlayerAction"
     },
-    // {
-    //   "id": "36",
-    //   "template": "Dare Master! {player1} gives out three dares. Choose one to do or drink twice!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "singlePlayerAction"
-    // },
-    // {
-    //   "id": "37",
-    //   "template": "Phone Check! Everyone puts their phone face down. First to check it drinks twice!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "38",
-    //   "template": "Slow Motion! Everyone must move in slow motion until the next card. Normal speed means drinking!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "39",
-    //   "template": "Swap Seats! Everyone must change seats. Last to find a new seat drinks!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // },
+    {
+      "id": "36",
+      "template": "{player1} give 3 penalties to a player who's tanner than you... If there are none, you take them",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "37",
+      "template": "All players that have a vape with them take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "38",
+      "template": "The last person to have been in a fight take 2 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "playerComparison"
+    },
+    {
+      "id": "39",
+      "template": "Take 3 penalties if you've ever lived in a foreign country",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
     {
       "id": "40",
       "template": "Word Association! {player1} says a word, go around making associations. Hesitation or repeat means drinking!",
       "numberOfPlayersInvolved": 1,
       "type": "groupAction"
     },
-    // {
-    //   "id": "41",
-    //   "template": "Counting Game! Count around the group but replace numbers containing 7 or multiples of 7 with 'Buzz'. Mistake means drinking!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "42",
-    //   "template": "Jinx! If any two players say the same thing at the same time, last to say 'Jinx' drinks!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "43",
-    //   "template": "Musical Statues! {player1} plays music on their phone. When it stops, last to freeze drinks!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "44",
-    //   "template": "Laugh Challenge! {player1} must make {player2} laugh. First to laugh drinks!",
-    //   "numberOfPlayersInvolved": 2,
-    //   "type": "playerComparison"
-    // },
-    // {
-    //   "id": "45",
-    //   "template": "Yoga Master! {player1} demonstrates a yoga pose, everyone must hold it. First to fall drinks!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "46",
-    //   "template": "Sing Along! {player1} starts singing a song, anyone who doesn't know the lyrics drinks!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "47",
-    //   "template": "Chain Reaction! {player1} picks an action, each person adds to it. Forget the sequence and drink!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "48",
-    //   "template": "Accent Switch! Whenever {player1} claps, everyone must change their accent. Last to switch drinks!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
     {
-      "id": "49",
-      "template": "Drink Link! {player1} picks someone to drink with. That person picks another, continue until everyone's drinking!",
+      "id": "41",
+      "template": "If you've ever been on vacation with {player1}, give out 2 penalties. If not, take them",
       "numberOfPlayersInvolved": 1,
       "type": "groupAction"
     },
-    // {
-    //   "id": "50",
-    //   "template": "Opposite Day! {player1} declares Opposite Day - say the opposite of what you mean. Mess up and drink!",
-    //   "numberOfPlayersInvolved": 1,
-    //   "type": "groupAction"
-    // },
-    // {
-    //   "id": "51",
-    //   "template": "Celebrity! {player1} and {player2} must act like celebrities chosen by the group. Break character and drink!",
-    //   "numberOfPlayersInvolved": 2,
-    //   "type": "playerComparison"
-    // },
-    // {
-    //   "id": "52",
-    //   "template": "Dragon's Breath! Last person to breathe fire (pretend) must drink!",
-    //   "numberOfPlayersInvolved": 0,
-    //   "type": "groupAction"
-    // }
+    {
+      "id": "42",
+      "template": "Players with the emptiest drink take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "42",
+      "template": "Take 2 penalties if you've ever been in a relationship with someone in this room",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "43",
+      "template": "Players who've been to a festival this year take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "44",
+      "template": "Take 2 penalties if you've ever been on a blind date",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "45",
+      "template": "Everyone who's been to Trinity Ball take 2 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "46",
+      "template": "Take 3 penalties if you've ever been kicked out of a club",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "47",
+      "template": "{player1} give out 3 penalties if you've ever ghosted someone... If not, take them yourself",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "48",
+      "template": "Players who've ever been on a holiday romance take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "49",
+      "template": "Players who've had a one night stand take 2 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "50",
+      "template": "Take 3 penalties if you've ever slid into someone's DMs",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "51",
+      "template": "{player1} give 2 penalties to the person you think is most likely to get married first",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "52",
+      "template": "Give 3 penalties if you have a dating app on your phone",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    }
   ]
 }
