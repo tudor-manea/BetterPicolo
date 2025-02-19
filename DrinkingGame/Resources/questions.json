@@ -2,63 +2,315 @@
   "questions": [
     {
       "id": "1",
-      "template": "{player1} must take a drink!",
+      "template": "{player1} picks someone to drink 2 penalties!",
       "numberOfPlayersInvolved": 1,
       "type": "singlePlayerAction"
     },
     {
       "id": "2",
-      "template": "{player1} must challenge {player2} to a dance-off! Loser drinks twice.",
-      "numberOfPlayersInvolved": 2,
-      "type": "playerComparison"
+      "template": "The player reading this card must take 3 penalties!",
+      "numberOfPlayersInvolved": 0,
+      "type": "singlePlayerAction"
     },
     {
       "id": "3",
-      "template": "Everyone except {player1} must drink!",
-      "numberOfPlayersInvolved": 1,
+      "template": "Chicks! All girls drink!",
+      "numberOfPlayersInvolved": 0,
       "type": "groupAction"
     },
     {
       "id": "4",
-      "template": "{player1} must give their phone to {player2}. {player2} can send one text message to anyone in {player1}'s contacts. If {player1} refuses, they drink 3 times.",
-      "numberOfPlayersInvolved": 2,
-      "type": "playerComparison"
+      "template": "Floor! Last person to point to the floor must take a penalty!",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
     },
     {
       "id": "5",
-      "template": "{player1} must tell an embarrassing story about themselves or drink twice.",
-      "numberOfPlayersInvolved": 1,
-      "type": "singlePlayerAction"
+      "template": "Guys! All guys drink!",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
     },
     {
       "id": "6",
-      "template": "Would you rather? {player1} asks {player2} two options. The group votes on which is worse. {player2} must do the winning option or drink twice.",
-      "numberOfPlayersInvolved": 2,
-      "type": "playerComparison"
+      "template": "Heaven! Last person to point to the sky must take a penalty!",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
     },
     {
       "id": "7",
-      "template": "Categories! {player1} picks a category (e.g., car brands). Go around the group naming items. First to hesitate or repeat drinks!",
+      "template": "Rhyme! Go around the group rhyming with the word chosen by {player1}. First to fail or repeat drinks!",
       "numberOfPlayersInvolved": 1,
       "type": "groupAction"
     },
     {
       "id": "8",
-      "template": "Truth or Dare! {player1} must choose truth or dare from {player2}. Refusing means drinking three times.",
+      "template": "Question Time! {player1} has to ask {player2} a question. If they don't answer, they take a maximum penalty. If they answer, {player1} takes a maximum penalty!",
       "numberOfPlayersInvolved": 2,
       "type": "playerComparison"
     },
     {
       "id": "9",
-      "template": "Waterfall! {player1} starts, and everyone must start drinking. You can't stop until the person before you stops!",
+      "template": "Categories! {player1} picks a category (e.g., car brands). Go around the group naming items. First to hesitate or repeat drinks!",
       "numberOfPlayersInvolved": 1,
       "type": "groupAction"
     },
     {
       "id": "10",
-      "template": "Never have I ever! {player1} starts with 3 fingers up. First to put all fingers down drinks!",
+      "template": "The player on aux must take 3 drinks",
+      "numberOfPlayersInvolved": 0,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "11",
+      "template": "Waterfall! {player1} starts, and everyone must start drinking. You can't stop until the person before you stops!",
       "numberOfPlayersInvolved": 1,
       "type": "groupAction"
-    }
+    },
+    {
+      "id": "12",
+      "template": "Song Showdown! {player1} and {player2} must pick a song to play. Group votes on the best song. Loser drinks 3 times!",
+      "numberOfPlayersInvolved": 2,
+      "type": "groupAction"
+    },
+    {
+      "id": "13",
+      "template": "European countries. If you repeat, or can't think of one, take a penalty. {player1}, you start",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "14",
+      "template": "Photo Shoot! {player1} must pose for a photo. Refusing to participate means taking a maximum penalty",
+      "numberOfPlayersInvolved": 1,
+      "type": "singlePlayerAction"
+    },
+    {
+      "id": "15",
+      "template": "Everyone taller than {playe1}, take a penalty for each extra inch",
+      "numberOfPlayersInvolved": 1,
+      "type": "playerComparison"
+    },
+    {
+      "id": "16",
+      "template": "Thumb Master! {player1} is now the thumb master - whenever they put their thumb on the table, last person to do so drinks!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "17",
+      "template": "Social! Everyone drinks!",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "18",
+      "template": "Player with the most facial hair must take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "playerComparison"
+    },
+    {
+      "id": "19",
+      "template": "On count of 3, everyone looks at someone. If they look back at you, both drink!",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "20",
+      "template": "The player with the most screentime on Instagram must take 3 penalties, the player with the least give out 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "playerComparison"
+    },
+    {
+      "id": "21",
+      "template": "The player who's been single the longest, give out 2 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "playerComparison"
+    },
+    {
+      "id": "22",
+      "template": "{player1} take a penalty from {player2}",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "23",
+      "template": "Spelling Bee! {player1} gives {player2} a word to spell backwards. Wrong spelling means drinking!",
+      "numberOfPlayersInvolved": 2,
+      "type": "playerComparison"
+    },
+    {
+      "id": "24",
+      "template": "Players who didn't vote in the last election give out 4 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "playerComparison"
+    },
+    {
+      "id": "25",
+      "template": "{player1} like the first 15 posts you find on Instagram, or take 3 penalties",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "26",
+      "template": "{player1} and {player2} have to agree on one player to give 4 penalties to",
+      "numberOfPlayersInvolved": 2,
+      "type": "groupAction"
+    },
+    {
+      "id": "27",
+      "template": "Players who have known each other for more than 6 years take 3 penalties together",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "28",
+      "template": "{player1} tell {player2} to take as many penalties as you want",
+      "numberOfPlayersInvolved": 2,
+      "type": "groupAction"
+    },
+    {
+      "id": "29",
+      "template": "Business students, take 4 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "30",
+      "template": "Guys take as many penalties as there are hot girls in the room",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "31",
+      "template": "Girls take as many penalties as there are hot guys in the room",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "32",
+      "template": "{player1} say something you've done. If nobody else has, everyone else drinks. If others have, you drink together",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    {
+      "id": "33",
+      "template": "Take 2 penalties if you've ever been to disneyland",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "34",
+      "template": "Couples in the group give out 3 penalties, if there are none everyone drinks",
+      "numberOfPlayersInvolved": 0,
+      "type": "groupAction"
+    },
+    {
+      "id": "35",
+      "template": "{player1} give 3 penalties if you've ever been broken up with. If not, take 3 penalties",
+      "numberOfPlayersInvolved": 0,
+      "type": "singlePlayerAction"
+    },
+    // {
+    //   "id": "36",
+    //   "template": "Dare Master! {player1} gives out three dares. Choose one to do or drink twice!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "singlePlayerAction"
+    // },
+    // {
+    //   "id": "37",
+    //   "template": "Phone Check! Everyone puts their phone face down. First to check it drinks twice!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "38",
+    //   "template": "Slow Motion! Everyone must move in slow motion until the next card. Normal speed means drinking!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "39",
+    //   "template": "Swap Seats! Everyone must change seats. Last to find a new seat drinks!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // },
+    {
+      "id": "40",
+      "template": "Word Association! {player1} says a word, go around making associations. Hesitation or repeat means drinking!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    // {
+    //   "id": "41",
+    //   "template": "Counting Game! Count around the group but replace numbers containing 7 or multiples of 7 with 'Buzz'. Mistake means drinking!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "42",
+    //   "template": "Jinx! If any two players say the same thing at the same time, last to say 'Jinx' drinks!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "43",
+    //   "template": "Musical Statues! {player1} plays music on their phone. When it stops, last to freeze drinks!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "44",
+    //   "template": "Laugh Challenge! {player1} must make {player2} laugh. First to laugh drinks!",
+    //   "numberOfPlayersInvolved": 2,
+    //   "type": "playerComparison"
+    // },
+    // {
+    //   "id": "45",
+    //   "template": "Yoga Master! {player1} demonstrates a yoga pose, everyone must hold it. First to fall drinks!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "46",
+    //   "template": "Sing Along! {player1} starts singing a song, anyone who doesn't know the lyrics drinks!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "47",
+    //   "template": "Chain Reaction! {player1} picks an action, each person adds to it. Forget the sequence and drink!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "48",
+    //   "template": "Accent Switch! Whenever {player1} claps, everyone must change their accent. Last to switch drinks!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    {
+      "id": "49",
+      "template": "Drink Link! {player1} picks someone to drink with. That person picks another, continue until everyone's drinking!",
+      "numberOfPlayersInvolved": 1,
+      "type": "groupAction"
+    },
+    // {
+    //   "id": "50",
+    //   "template": "Opposite Day! {player1} declares Opposite Day - say the opposite of what you mean. Mess up and drink!",
+    //   "numberOfPlayersInvolved": 1,
+    //   "type": "groupAction"
+    // },
+    // {
+    //   "id": "51",
+    //   "template": "Celebrity! {player1} and {player2} must act like celebrities chosen by the group. Break character and drink!",
+    //   "numberOfPlayersInvolved": 2,
+    //   "type": "playerComparison"
+    // },
+    // {
+    //   "id": "52",
+    //   "template": "Dragon's Breath! Last person to breathe fire (pretend) must drink!",
+    //   "numberOfPlayersInvolved": 0,
+    //   "type": "groupAction"
+    // }
   ]
 }

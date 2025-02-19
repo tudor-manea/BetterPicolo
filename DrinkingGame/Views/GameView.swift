@@ -6,38 +6,43 @@ struct GameView: View {
     @State private var cardOpacity: Double = 1
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Game On!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+        ZStack {
+            // Gradient Background
+            LinearGradient(gradient: Gradient(colors: [
+                .customNavy,
+                .customTeal
+            ]), startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
             
-            Spacer()
-            
-            // Flashcard-style question display
-            ZStack {
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.blue.opacity(0.1))
-                    .shadow(radius: 10)
+            VStack(spacing: 20) {
+                Text("Game On!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
                 
-                VStack(spacing: 15) {
-                    Text(viewModel.formattedQuestion)
-                        .font(.title2)
-                        .multilineTextAlignment(.center)
-                        .padding()
+                Spacer()
+                
+                // Flashcard-style question display
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.customLightBlue.opacity(0.9))
+                        .shadow(radius: 10)
+                    
+                    VStack(spacing: 15) {
+                        Text(viewModel.formattedQuestion)
+                            .font(.title2)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .foregroundColor(.white)
+                    }
                 }
-            }
-            .frame(height: 200)
-            .rotation3DEffect(
-                .degrees(cardRotation),
-                axis: (x: 0, y: 1, z: 0)
-            )
-            .opacity(cardOpacity)
-            
-            Spacer()
-            
-            // Control buttons
-            HStack(spacing: 20) {
-                Button(action: {
+                .frame(height: 200)
+                .rotation3DEffect(
+                    .degrees(cardRotation),
+                    axis: (x: 0, y: 1, z: 0)
+                )
+                .opacity(cardOpacity)
+                .onTapGesture {
                     withAnimation(.easeInOut(duration: 0.5)) {
                         cardOpacity = 0
                         cardRotation = -90
@@ -51,26 +56,25 @@ struct GameView: View {
                             cardRotation = 0
                         }
                     }
-                }) {
-                    Text("Next Question")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(.blue)
-                        .foregroundColor(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
                 
+                Spacer()
+                
+                // End Game button
                 Button(action: viewModel.endGame) {
-                    Text("End Game")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(.red)
-                        .foregroundColor(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    HStack {
+                        Image(systemName: "xmark.circle.fill")
+                        Text("End Game")
+                    }
+                    .frame(width: 200)
+                    .padding()
+                    .background(Color.customOrange)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
                 }
+                .padding(.bottom, 30)
             }
-            .padding(.horizontal)
+            .padding()
         }
-        .padding()
     }
 }
